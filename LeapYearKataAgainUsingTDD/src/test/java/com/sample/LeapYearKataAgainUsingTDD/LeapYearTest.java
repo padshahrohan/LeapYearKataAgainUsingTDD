@@ -7,8 +7,13 @@ import org.junit.Test;
 public class LeapYearTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void IsLeapYearIfDivisibleBy400()
+	{
+		Year year = new Year(2000);
+		boolean actual = year.isLeapYear();
+		
+		assertEquals(true, actual);
+		
 	}
 
 }
